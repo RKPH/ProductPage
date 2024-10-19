@@ -9,7 +9,7 @@ export default defineConfig({
       name: "ProductPages",
       filename: "remoteEntry.js",
       exposes: {
-        "./MenPage": "./src/Pages/MenPage.jsx",
+        "./MenPage": "./src/MenPage.jsx",
         "./WomenPage": "./src/Pages/WomenPage.jsx",
       },
       shared: ["react"],
