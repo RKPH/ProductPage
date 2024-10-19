@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "Product-pages",
+      name: "ProductPages",
       filename: "remoteEntry.js",
       exposes: {
         "./MenPage": "./src/Pages/MenPage.jsx",
