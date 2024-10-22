@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const KidsPage = () => {
-  return (
-    <div>
-      kids tung
-    </div>
-  )
-}
+  return <div>kids tung lol</div>;
+};
 
-export default KidsPage
+export default KidsPage;
