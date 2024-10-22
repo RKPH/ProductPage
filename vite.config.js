@@ -11,6 +11,7 @@ export default defineConfig({
       exposes: {
         "./MenPage": "./src/Pages/MenPage.jsx",
         "./WomenPage": "./src/Pages/WomenPage.jsx",
+        "./KidsPage": "./src/Pages/KidsPage.jsx",
       },
       shared: ["react"],
     }),
