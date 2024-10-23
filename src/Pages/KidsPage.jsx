@@ -22,7 +22,7 @@ const KidsPage = () => {
         <div className="flex flex-col md:flex-row justify-between">
           <div className="age-group mb-4 md:mb-0">
             <img
-              src="https://example.com/0-4.jpg"
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Infants_Q1_Ecomm_A_FC_Age_F_640x640_4b47ce365a.jpg"
               alt="0-4 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
@@ -32,7 +32,7 @@ const KidsPage = () => {
           </div>
           <div className="age-group mb-4 md:mb-0">
             <img
-              src="https://example.com/4-8.jpg"
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Little_Kids_Ecomm_A_FC_Age_F_640x640_22744c9e24.jpg"
               alt="4-8 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
@@ -42,7 +42,7 @@ const KidsPage = () => {
           </div>
           <div className="age-group">
             <img
-              src="https://example.com/8-16.jpg"
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Running_Ecomm_AFC_Collection_Mobile_M_2_640x640_new_f3e0c136a9.jpg"
               alt="8-16 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
@@ -119,36 +119,6 @@ const KidsPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-black text-white p-6 mt-8">
-        <div className="flex justify-between">
-          <div className="footer-section">
-            <h3 className="text-lg font-semibold">Products</h3>
-            <ul>
-              <li>Footwear</li>
-              <li>Clothing</li>
-              <li>Accessories</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3 className="text-lg font-semibold">Company Info</h3>
-            <ul>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Press</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3 className="text-lg font-semibold">Support</h3>
-            <ul>
-              <li>Help</li>
-              <li>Store Finder</li>
-              <li>Payment</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
