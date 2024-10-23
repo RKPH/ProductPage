@@ -89,7 +89,7 @@ const KidsPage = () => {
 
       {/* Age Range Section */}
       <section className="p-10">
-        <div className="flex flex-col md:flex-row justify-between gap-1">
+        <div className="flex flex-col md:flex-row justify-between gap-3">
           <div className="age-group mb-4 md:mb-0">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Infants_Q1_Ecomm_A_FC_Age_F_640x640_4b47ce365a.jpg"
