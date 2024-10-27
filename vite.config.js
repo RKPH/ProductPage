@@ -13,7 +13,7 @@ export default defineConfig({
         "./WomenPage": "./src/Pages/WomenPage.jsx",
         "./KidsPage": "./src/Pages/KidsPage.jsx",
       },
-      shared: ["react"],
+     shared: ["react", "react-dom"],
     }),
   ],
   build: {
