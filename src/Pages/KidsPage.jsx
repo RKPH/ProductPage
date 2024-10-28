@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "tailwindcss/tailwind.css";
 const KidsPage = () => {
   // Product pool
   const products = [
