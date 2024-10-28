@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
@@ -6,4 +6,4 @@ module.exports = {
       prefix: 'product-',
     },
   },
-};
+}
