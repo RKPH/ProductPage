@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "tailwindcss/tailwind.css";
+
 const KidsPage = () => {
   // Product pool
   const products = [
@@ -71,13 +71,13 @@ const KidsPage = () => {
   return (
     <div className="kids-page">
       {/* Hero Section */}
-      <section className="w-full h-auto relative mb-16">
+      <div className="w-full h-auto relative mb-16 section">
         <img
           src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/Banner_a4bb4fcaa6.jpg"
           alt="Kids Banner"
           className="w-full h-[500px] object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex  items-center justify-center text-center space-y-4">
+        <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center space-y-4">
           <h1 className="text-white text-4xl md:text-6xl font-bold">
             ADIDAS Z.N.E.
           </h1>
@@ -85,15 +85,11 @@ const KidsPage = () => {
             SHOP SPORTSWEAR
           </button>
         </div>
-      </section>
+      </div>
 
       {/* Age Range Section */}
-      <section className="p-10">
-<<<<<<< HEAD
-        <div className="flex  md:flex-row justify-between gap-3">
-=======
-        <div className="flex flex-row justify-between gap-3">
->>>>>>> 9270f6c2e6fb11a91c5b5c96c7562d6aa867ab90
+      <div className="p-10 section">
+        <div className="flex flex-col md:flex-row justify-between gap-1">
           <div className="age-group mb-4 md:mb-0">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Infants_Q1_Ecomm_A_FC_Age_F_640x640_4b47ce365a.jpg"
@@ -125,10 +121,10 @@ const KidsPage = () => {
             </h2>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Disney Pegasus Collection Section with Video */}
-      <section className="relative w-full h-[500px] mb-16">
+      <div className="relative w-full h-[500px] mb-16 section">
         <video
           loop
           muted
@@ -142,7 +138,7 @@ const KidsPage = () => {
           />
         </video>
 
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex  items-center justify-center text-center space-y-4">
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-center space-y-4">
           <h2 className="text-white text-4xl md:text-6xl font-bold">
             Disney Pegasus Collection
           </h2>
@@ -153,17 +149,17 @@ const KidsPage = () => {
             Shop Now
           </button>
         </div>
-      </section>
+      </div>
 
       {/* Top Sellers Section */}
-      <section className="p-16 relative">
+      <div className="p-16 relative section">
         <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
 
         {/* Slider Wrapper */}
         <div className="relative w-full overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 25}%)` }}
+            style={{ transform: translateX(-${currentIndex * 25}%) }}
           >
             {products.map((product, index) => (
               <div key={index} className="min-w-[25%] text-center p-4">
@@ -228,7 +224,7 @@ const KidsPage = () => {
             </svg>
           </button>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
