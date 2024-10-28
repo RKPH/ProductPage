@@ -13,11 +13,10 @@ export default defineConfig({
         "./WomenPage": "./src/Pages/WomenPage.jsx",
         "./KidsPage": "./src/Pages/KidsPage.jsx",
       },
-     shared: ["react", "react-dom"],
+      shared: ["react", "react-dom"],
     }),
   ],
   build: {
-    modulePreload: false,
     target: "esnext",
     minify: false,
     cssCodeSplit: false,
