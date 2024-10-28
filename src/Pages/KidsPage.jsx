@@ -70,8 +70,8 @@ const KidsPage = () => {
 
   return (
     <div className="kids-page">
-      {/* Hero Section */}
-      <div className="w-full h-auto relative mb-16 section">
+      {/* Hero  */}
+      <div className="w-full h-auto relative mb-16 ">
         <img
           src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/Banner_a4bb4fcaa6.jpg"
           alt="Kids Banner"
@@ -87,8 +87,8 @@ const KidsPage = () => {
         </div>
       </div>
 
-      {/* Age Range Section */}
-      <div className="p-10 section">
+      {/* Age Range  */}
+      <div className="p-10 ">
         <div className="flex flex-row justify-between gap-1">
           <div className="age-group mb-4 md:mb-0">
             <img
@@ -123,8 +123,8 @@ const KidsPage = () => {
         </div>
       </div>
 
-      {/* Disney Pegasus Collection Section with Video */}
-      <div className="relative w-full h-[500px] mb-16 section">
+      {/* Disney Pegasus Collection  with Video */}
+      <div className="relative w-full h-[500px] mb-16 ">
         <video
           loop
           muted
@@ -151,8 +151,8 @@ const KidsPage = () => {
         </div>
       </div>
 
-      {/* Top Sellers Section */}
-      <div className="p-16 relative section">
+      {/* Top Sellers  */}
+      <div className="p-16 relative ">
         <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
 
         {/* Slider Wrapper */}
