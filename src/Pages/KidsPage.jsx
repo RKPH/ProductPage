@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "tailwindcss/tailwind.css";
 const KidsPage = () => {
   // Product pool
   const products = [
@@ -89,7 +89,11 @@ const KidsPage = () => {
 
       {/* Age Range Section */}
       <section className="p-10">
+<<<<<<< HEAD
         <div className="flex  md:flex-row justify-between gap-3">
+=======
+        <div className="flex flex-row justify-between gap-3">
+>>>>>>> 9270f6c2e6fb11a91c5b5c96c7562d6aa867ab90
           <div className="age-group mb-4 md:mb-0">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Infants_Q1_Ecomm_A_FC_Age_F_640x640_4b47ce365a.jpg"
