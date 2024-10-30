@@ -89,14 +89,14 @@ const KidsPage = () => {
 
       {/* Age Range  */}
       <div className="p-10">
-        <div className="flex flex-row justify-between gap-1">
+        <div className="flex flex-row justify-between gap-2">
           <div className="age-group mb-4 md:mb-0">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Infants_Q1_Ecomm_A_FC_Age_F_640x640_4b47ce365a.jpg"
               alt="0-4 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
-            <button className="text-black font-bold underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
+            <button className="text-black underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               0-4 Years
             </button>
           </div>
@@ -106,7 +106,7 @@ const KidsPage = () => {
               alt="4-8 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
-            <button className="text-black font-bold underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
+            <button className="text-black underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               4-8 Years
             </button>
           </div>
@@ -116,7 +116,7 @@ const KidsPage = () => {
               alt="8-16 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
-            <button className="text-black font-bold underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
+            <button className="text-black underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               8-16 Years
             </button>
           </div>
