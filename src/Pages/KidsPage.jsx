@@ -87,34 +87,34 @@ const KidsPage = () => {
         </div>
       </div>
 
-      {/* Age Range  */}
+      {/* Age Range Section */}
       <div className="p-10">
-        <div className="flex flex-row justify-between gap-2">
-          <div className="age-group mb-4 md:mb-0">
+        <div className="flex flex-row justify-center gap-2">
+          <div className="age-group mb-4 ">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Infants_Q1_Ecomm_A_FC_Age_F_640x640_4b47ce365a.jpg"
               alt="0-4 Years"
-              className="w-full h-[300px] object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
             <button className="text-black underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               0-4 Years
             </button>
           </div>
-          <div className="age-group mb-4 md:mb-0">
+          <div className="age-group mb-4 ">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Little_Kids_Ecomm_A_FC_Age_F_640x640_22744c9e24.jpg"
               alt="4-8 Years"
-              className="w-full h-[300px] object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
             <button className="text-black underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               4-8 Years
             </button>
           </div>
-          <div className="age-group">
+          <div className="age-group mb-4">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Running_Ecomm_AFC_Collection_Mobile_M_2_640x640_new_f3e0c136a9.jpg"
               alt="8-16 Years"
-              className="w-full h-[300px] object-cover rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
             <button className="text-black underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               8-16 Years
@@ -124,7 +124,7 @@ const KidsPage = () => {
       </div>
 
       {/* Disney Pegasus Collection  with Video */}
-      <div className="relative w-full h-[500px] mb-16 ">
+      <div className="relative w-full h-[500px] mb-16 mt-10">
         <video
           loop
           muted
