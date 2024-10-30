@@ -88,7 +88,7 @@ const KidsPage = () => {
       </div>
 
       {/* Age Range  */}
-      <div className="p-10 ">
+      <div className="p-10">
         <div className="flex flex-row justify-between gap-1">
           <div className="age-group mb-4 md:mb-0">
             <img
@@ -96,9 +96,9 @@ const KidsPage = () => {
               alt="0-4 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
-            <h2 className="text-center text-xl font-semibold mt-2">
+            <button className="text-black font-bold underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               0-4 Years
-            </h2>
+            </button>
           </div>
           <div className="age-group mb-4 md:mb-0">
             <img
@@ -106,9 +106,9 @@ const KidsPage = () => {
               alt="4-8 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
-            <h2 className="text-center text-xl font-semibold mt-2">
+            <button className="text-black font-bold underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               4-8 Years
-            </h2>
+            </button>
           </div>
           <div className="age-group">
             <img
@@ -116,9 +116,9 @@ const KidsPage = () => {
               alt="8-16 Years"
               className="w-full h-[300px] object-cover rounded-lg"
             />
-            <h2 className="text-center text-xl font-semibold mt-2">
+            <button className="text-black font-bold underline mt-2 hover:bg-black hover:text-white hover:no-underline transition-all duration-300 text-xl">
               8-16 Years
-            </h2>
+            </button>
           </div>
         </div>
       </div>
