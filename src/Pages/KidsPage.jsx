@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const KidsPage = () => {
   // Product pool
@@ -147,6 +147,38 @@ const KidsPage = () => {
           </p>
           <button className="bg-white text-black py-2 px-6 text-lg font-semibold rounded hover:bg-gray-300 transition-all duration-300">
             Shop Now
+          </button>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center p-10 section md:space-x-2">
+        <div className="flex-1 flex flex-col items-center text-center">
+          <img
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/commercial_fw22_lego_ch2_winter_kids_lp_teaser_card_d_4038d78486.jpg"
+            alt="LEGO Winter Collection"
+            className="w-full h-full object-cover rounded-lg"
+          />
+          <h2 className="text-2xl font-bold mt-4">Imagine your world</h2>
+          <p className="text-gray-700">
+            Play through the cold with the new exclusive adidas LEGO® Winter
+            collection.
+          </p>
+          <button className="mt-2 text-black font-bold underline py-2 px-4 hover:bg-black hover:text-white hover:no-underline transition-all duration-300">
+            SHOP NOW
+          </button>
+        </div>
+        <div className="flex-1 flex flex-col items-center text-center">
+          <img
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/originals_ss21_adicolor_april_launch_glp_k_teaser_large_new_01_d_e727fecc7f.jpg"
+            alt="Adicolor Stories"
+            className="w-full h-full object-cover rounded-lg"
+          />
+          <h2 className="text-2xl font-bold mt-4">adicolor stories</h2>
+          <p className="text-gray-700">
+            Queen-Zhanel rocks all new adicolor with her big sis Alida.
+          </p>
+          <button className="mt-2 text-black font-bold underline py-2 px-4 hover:bg-black hover:text-white hover:no-underline transition-all duration-300">
+            SHOP NOW
           </button>
         </div>
       </div>
