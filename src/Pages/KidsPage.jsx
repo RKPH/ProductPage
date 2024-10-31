@@ -1,4 +1,5 @@
-import { useState } from "react";
+import  { useState } from "react";
+import React from "react";
 
 const KidsPage = () => {
   // Product pool
@@ -189,7 +190,10 @@ const KidsPage = () => {
 
         {/* Slider Wrapper */}
         <div className="relative w-full overflow-hidden">
-          <div className="flex transition-transform duration-500 ease-in-out">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 25}%)` }}
+          >
             {products.map((product, index) => (
               <div key={index} className="min-w-[25%] text-center p-4">
                 <img
