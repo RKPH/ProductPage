@@ -12,42 +12,50 @@ const KidsPage = () => {
     },
     {
       name: "Brand Love Backpack",
-      image: "https://example.com/top-seller2.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "650,000₫",
     },
     {
       name: "Marvel Avengers Backpack",
-      image: "https://example.com/top-seller3.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "800,000₫",
     },
     {
       name: "Tiro Tee Kids",
-      image: "https://example.com/top-seller4.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "700,000₫",
     },
     {
       name: "New Sports Shoe",
-      image: "https://example.com/top-seller5.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "1,000,000₫",
     },
     {
       name: "Running Shoes",
-      image: "https://example.com/top-seller6.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "1,200,000₫",
     },
     {
       name: "Running Shoes",
-      image: "https://example.com/top-seller6.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "1,200,000₫",
     },
     {
       name: "Running Shoes",
-      image: "https://example.com/top-seller6.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "1,200,000₫",
     },
     {
       name: "Running Shoes",
-      image: "https://example.com/top-seller6.jpg",
+      image:
+        "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "1,200,000₫",
     },
   ];
