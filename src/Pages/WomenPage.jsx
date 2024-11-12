@@ -105,7 +105,8 @@ const WomenPage = () => {
                 media="(max-width: 767px)" width="750" height="1000"/>
             <img
                 src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_d_8288c6b215.jpg"
-                alt="Launch 2024 Fall Winter image" loading="lazy" fetchPriority="auto"/></picture>
+                alt="Launch 2024 Fall Winter image" loading="lazy" fetchPriority="auto"/>
+          </picture>
           <div
               className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center space-y-4">
             <h1 className="text-white text-4xl md:text-6xl font-bold">
