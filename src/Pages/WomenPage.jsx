@@ -14,63 +14,63 @@ const WomenPage = () => {
     {
       name: "Messi Training Jersey",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "700,000₫",
       category: "Women"
     },
     {
       name: "Brand Love Backpack",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "650,000₫",
       category: "Women"
     },
     {
       name: "Marvel Avengers Backpack",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "800,000₫",
       category: "Women"
     },
     {
       name: "Tiro Tee Women",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "700,000₫",
       category: "Women"
     },
     {
       name: "New Sports Shoe",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "1,000,000₫",
       category: "Women"
     },
     {
       name: "Running Shoes",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "1,200,000₫",
       category: "Women"
     },
     {
       name: "Running Shoes",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "1,200,000₫",
       category: "Women"
     },
     {
       name: "Running Shoes",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "1,200,000₫",
       category: "Women"
     },
     {
       name: "Running Shoes",
       image:
-          "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "1,200,000₫",
       category: "Women"
     },
@@ -95,7 +95,7 @@ const WomenPage = () => {
         {/* Hero  */}
         <div className="w-full h-auto relative mb-16 ">
           <img
-              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/Banner_a4bb4fcaa6.jpg"
+              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_d_8288c6b215.jpg"
               alt="Women Banner"
               className="w-full h-[500px] object-cover"
           />
