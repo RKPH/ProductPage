@@ -10,71 +10,70 @@ const WomenPage = () => {
   const listRef = useRef(null);
 
   // Product pool
+  const srcSets = [
+    {
+      src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
+      media: "(min-width: 960px)",
+      width: 1050,
+      height: 1400,
+    },
+    {
+      src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_300,w_300/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_t_2471e36eca.jpg",
+      media: "(min-width: 768px)",
+      width: 1050,
+      height: 1400,
+    },
+    {
+      src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_300,w_300/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_m_357ee2cb53.jpg",
+      media: "(max-width: 767px)",
+      width: 1050,
+      height: 1400,
+    }
+  ];
   const products = [
     {
       name: "Messi Training Jersey",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "700,000₫",
-      category: "Women"
+      category: "Sportswear",
+      srcSets: srcSets,
+      fallbackImage:
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
     },
     {
       name: "Brand Love Backpack",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "650,000₫",
-      category: "Women"
+      category: "Accessories",
+      srcSets: srcSets,
+      fallbackImage:
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
     },
     {
       name: "Marvel Avengers Backpack",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "800,000₫",
-      category: "Women"
+      category: "Backpack",
+      srcSets: srcSets,
+      fallbackImage:
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
     },
     {
       name: "Tiro Tee Women",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "700,000₫",
-      category: "Women"
+      category: "Women’s T-Shirts",
+      srcSets: srcSets,
+      fallbackImage:
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
     },
     {
       name: "New Sports Shoe",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
       price: "1,000,000₫",
-      category: "Women"
-    },
-    {
-      name: "Running Shoes",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
-      price: "1,200,000₫",
-      category: "Women"
-    },
-    {
-      name: "Running Shoes",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
-      price: "1,200,000₫",
-      category: "Women"
-    },
-    {
-      name: "Running Shoes",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
-      price: "1,200,000₫",
-      category: "Women"
-    },
-    {
-      name: "Running Shoes",
-      image:
-          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
-      price: "1,200,000₫",
-      category: "Women"
-    },
+      category: "Shoes",
+      srcSets: srcSets,
+      fallbackImage:
+          "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+    }
   ];
+
+
 
   // State to track the current index of the products being displayed
   const handleScroll = () => {
@@ -234,12 +233,17 @@ const WomenPage = () => {
                 onScroll={handleScroll}
                 className="flex gap-x-4 overflow-x-auto w-[98%] py-2 min-h-fit flex-nowrap custom-scrollbar"
             >
-              {products
+              {products.slice(0, 10).map((product, index) => (
+                  <ProductCard
+                      key={index}
+                      srcSets={product.srcSets}
+                      price={product.price}
+                      name={product.name}
+                      category={product.category}
+                      fallbackImage={product.fallbackImage}
+                  />
+              ))}
 
-                  .slice(0, 10)
-                  .map((product, index) => (
-                      <ProductCard key={index} {...product} />
-                  ))}
             </ul>
 
             {showNext && (
