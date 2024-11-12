@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useRef } from "react";
+import {useState} from "react";
+import {useRef} from "react";
 import ProductCard from "../Components/ProductCard.jsx";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -80,17 +80,47 @@ const MenPage = () => {
     };
 
     const scrollLeft = () => {
-        listRef.current.scrollBy({ left: -600, behavior: "smooth" });
+        listRef.current.scrollBy({left: -600, behavior: "smooth"});
     };
 
     const scrollRight = () => {
-        listRef.current.scrollBy({ left: 600, behavior: "smooth" });
+        listRef.current.scrollBy({left: 600, behavior: "smooth"});
     };
 
     return (
         <div className="Men-page">
+
+            <div className="w-full h-auto relative mb-16">
+                {/*Banner*/}
+                <div className="_fill-image_154ez_1" data-auto-id="picture">
+                    <picture>
+                        <source
+                            srcSet="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/4985239_Mini_Masthead_DT_2880x720_1_4869aa5588.jpg"
+                            media="(min-width: 960px)" width="2880" height="720"/>
+                        <source
+                            srcSet="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_960,w_960/4985239_Mini_Masthead_MO_720x920_15614a9463.jpg"
+                            media="(min-width: 768px)" width="720" height="920"/>
+                        <source
+                            srcSet="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_768,w_768/4985239_Mini_Masthead_MO_720x920_770a023e6d.jpg"
+                            media="(max-width: 767px)" width="720" height="920"/>
+                        <img
+                            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/4985239_Mini_Masthead_DT_2880x720_1_4869aa5588.jpg"
+                            alt="" loading="eager" fetchPriority="high"/></picture>
+                </div>
+                <div
+                    className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center space-y-4">
+                    <h1 className="text-white text-4xl md:text-6xl font-bold">
+                        ADIDAS Z.N.E. MEN
+                    </h1>
+                    <button
+                        className="bg-white text-black py-2 px-6 text-lg font-semibold rounded hover:bg-gray-300 transition-all duration-300">
+                        SHOP MEN'S SPORTSWEAR
+                    </button>
+                </div>
+            </div>
             {/* Hero Section */}
             <div className="w-full h-auto relative mb-16">
+                {/*Banner*/}
                 <div className="_fill-image_154ez_1" data-auto-id="picture">
                     <picture>
                         <source
@@ -122,7 +152,6 @@ const MenPage = () => {
             {/* Product Section */}
             <div className="p-4 relative">
                 <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
-
                 {/* Slider Wrapper */}
                 <div className="flex w-full items-center justify-center mt-2 relative">
                     {showPrev && (
@@ -132,7 +161,6 @@ const MenPage = () => {
                             <ArrowBackIcon/>
                         </button>
                     )}
-
                     <ul
                         ref={listRef}
                         onScroll={handleScroll}
@@ -148,16 +176,17 @@ const MenPage = () => {
                             />
                         ))}
                     </ul>
-
                     {showNext && (
                         <button
                             onClick={scrollRight}
                             className="absolute right-0 z-10 p-4 px-5 bg-white text-black border border-black">
-                            <ArrowForwardIcon />
+                            <ArrowForwardIcon/>
                         </button>
                     )}
                 </div>
             </div>
+
+
         </div>
     );
 };
