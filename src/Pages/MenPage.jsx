@@ -127,7 +127,7 @@ const MenPage = () => {
                     </div>
                     <div className="age-group mb-4 ">
                         <img
-                            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Little_Men_Ecomm_A_FC_Age_F_640x640_22744c9e24.jpg"
+                            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_530,w_530/SS_18_YA_Little_Kids_Ecomm_A_FC_Age_F_640x640_22744c9e24.jpg"
                             alt="4-8 Years"
                             className="w-full h-full object-cover rounded-lg"
                         />
