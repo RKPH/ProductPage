@@ -37,7 +37,7 @@ const MenPage = () => {
             category: "Sportswear",
             srcSets: srcSets,
             fallbackImage:
-                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/Stan_Smith_Shoes_White_FX5502_01_standard.jpg",
         },
         {
             name: "Brand Love Backpack",
@@ -45,7 +45,7 @@ const MenPage = () => {
             category: "Accessories",
             srcSets: srcSets,
             fallbackImage:
-                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/Stan_Smith_Shoes_White_FX5502_01_standard.jpg",
         },
         {
             name: "Marvel Avengers Backpack",
@@ -53,7 +53,7 @@ const MenPage = () => {
             category: "Backpack",
             srcSets: srcSets,
             fallbackImage:
-                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/Stan_Smith_Shoes_White_FX5502_01_standard.jpg",
         },
         {
             name: "Tiro Tee Women",
@@ -61,7 +61,7 @@ const MenPage = () => {
             category: "Women’s T-Shirts",
             srcSets: srcSets,
             fallbackImage:
-                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/Stan_Smith_Shoes_White_FX5502_01_standard.jpg",
         },
         {
             name: "New Sports Shoe",
@@ -69,7 +69,7 @@ const MenPage = () => {
             category: "Shoes",
             srcSets: srcSets,
             fallbackImage:
-                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/68ae7ea7849b43eca70aac1e00f5146d_9366/Stan_Smith_Shoes_White_FX5502_01_standard.jpg",
         }
     ];
 
@@ -137,7 +137,7 @@ const MenPage = () => {
                         {products.slice(0, 10).map((product, index) => (
                             <ProductCard
                                 key={index}
-                             
+
                                 price={product.price}
                                 name={product.name}
                                 category={product.category}
