@@ -5,13 +5,13 @@ import { Card } from "@mui/material";
 
 const ProductCard = ({ image, price, name, category }) => {
     return (
-        <Card className="flex-shrink-0 w-72  rounded-md border overflow-hidden hover:border-black mb-2 shadow-none">
+        <Card className="flex-shrink-0 w-72 rounded-md border overflow-hidden hover:border-black mb-2 shadow-none">
             {/* Product Image */}
-            <div className="relative aspect-square">
+            <div className="relative aspect-square flex items-center justify-center bg-gray-100">
                 <img
                     src={image}
                     alt={name}
-                    className="object-contain bg-gray-100 h-full w-full"
+                    className="object-contain h-full w-full p-2" // Add padding to keep it centered
                 />
             </div>
 
@@ -19,7 +19,7 @@ const ProductCard = ({ image, price, name, category }) => {
             <div className="p-1 px-3 text-left flex flex-col space-y-1">
                 <span className="text-base font-medium truncate">{price}</span>
                 <span className="text-base text-gray-800 font-bold truncate">
-          {name}
+            {name}
         </span>
                 <span className="text-sm text-gray-500">{category}</span>
             </div>
