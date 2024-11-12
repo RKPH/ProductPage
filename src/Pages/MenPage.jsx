@@ -14,63 +14,63 @@ const MenPage = () => {
         {
             name: "Messi Training Jersey",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "700,000₫",
             category: "Men"
         },
         {
             name: "Brand Love Backpack",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "650,000₫",
             category: "Men"
         },
         {
             name: "Marvel Avengers Backpack",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "800,000₫",
             category: "Men"
         },
         {
             name: "Tiro Tee Men",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "700,000₫",
             category: "Men"
         },
         {
             name: "New Sports Shoe",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "1,000,000₫",
             category: "Men"
         },
         {
             name: "Running Shoes",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "1,200,000₫",
             category: "Men"
         },
         {
             name: "Running Shoes",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "1,200,000₫",
             category: "Men"
         },
         {
             name: "Running Shoes",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "1,200,000₫",
             category: "Men"
         },
         {
             name: "Running Shoes",
             image:
-                "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Men_Purple_IZ2999_21_model.jpg",
+                "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
             price: "1,200,000₫",
             category: "Men"
         },
@@ -183,7 +183,7 @@ const MenPage = () => {
             <div className="flex flex-col md:flex-row items-center p-10 section md:space-x-2">
                 <div className="flex-1 flex flex-col items-center text-center">
                     <img
-                        src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/commercial_fw22_lego_ch2_winter_Men_lp_teaser_card_d_4038d78486.jpg"
+                        src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/commercial_fw22_lego_ch2_winter_kids_lp_teaser_card_d_4038d78486.jpg"
                         alt="LEGO Winter Collection"
                         className="w-full h-full object-cover rounded-lg"
                     />
