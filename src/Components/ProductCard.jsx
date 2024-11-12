@@ -11,7 +11,7 @@ const ProductCard = ({
   fallbackImage,
 }) => {
   return (
-    <Card className="flex-shrink-0 w-72 rounded-md border overflow-hidden hover:border-black mb-2 shadow-none">
+    <Card className="flex-shrink-0 w-72 rounded-md overflow-hidden hover:border-black mb-2 shadow-none">
       {/* Product Image */}
       <div className="relative aspect-square flex items-center justify-center bg-gray-100">
         <picture>
