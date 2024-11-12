@@ -11,24 +11,25 @@ const MenPage = () => {
 
     const srcSets = [
         {
-            src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_d_b322bb6282.jpg",
+            src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/originals_fw24_100thieves_2_launch_com_ct_d_ab4bfb5538.jpg",
             media: "(min-width: 960px)",
             width: 1050,
             height: 1400,
         },
         {
-            src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_300,w_300/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_t_2471e36eca.jpg",
+            src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_300,w_300/originals_fw24_100thieves_2_launch_com_ct_t_9181f0eb23.jpg",
             media: "(min-width: 768px)",
             width: 1050,
             height: 1400,
         },
         {
-            src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_300,w_300/sportswear_fw24_zne_launch_mglp_carousel_mini_lookbook_4_m_357ee2cb53.jpg",
+            src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_300,w_300/originals_fw24_100thieves_2_launch_com_ct_m_cd95ba6d4d.jpg",
             media: "(max-width: 767px)",
             width: 1050,
             height: 1400,
         }
     ];
+
     const products = [
         {
             name: "Messi Training Jersey",
