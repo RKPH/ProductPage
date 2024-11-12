@@ -9,6 +9,10 @@ const MenPage = () => {
     const [showNext, setShowNext] = useState(true);
     const listRef = useRef(null);
 
+    const [showPrev2, setShowPrev2] = useState(false);
+    const [showNext2, setShowNext2] = useState(true);
+    const listRef2 = useRef(null);
+
     const srcSets = [
         {
             src: "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/originals_fw24_100thieves_2_launch_com_ct_d_ab4bfb5538.jpg",
@@ -87,6 +91,20 @@ const MenPage = () => {
         listRef.current.scrollBy({left: 600, behavior: "smooth"});
     };
 
+    const handleScroll2 = () => {
+        const list2 = listRef2.current;
+        setShowPrev2(list2.scrollLeft > 0);
+        setShowNext2(list2.scrollWidth > list2.scrollLeft + list2.clientWidth);
+    };
+
+    const scrollLeft2 = () => {
+        listRef2.current.scrollBy({left: -600, behavior: "smooth"});
+    };
+
+    const scrollRight2 = () => {
+        listRef2.current.scrollBy({left: 600, behavior: "smooth"});
+    };
+
     return (
         <div className="Men-page">
 
@@ -123,16 +141,16 @@ const MenPage = () => {
                 <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
                 {/* Slider Wrapper */}
                 <div className="flex w-full items-center justify-center mt-2 relative">
-                    {showPrev && (
+                    {showPrev2 && (
                         <button
-                            onClick={scrollLeft}
+                            onClick={scrollLeft2}
                             className="absolute left-0 z-10 p-4 px-5 bg-white text-black border border-black">
                             <ArrowBackIcon/>
                         </button>
                     )}
                     <ul
-                        ref={listRef}
-                        onScroll={handleScroll}
+                        ref={listRef2}
+                        onScroll={handleScroll2}
                         className="flex gap-x-4 overflow-x-auto w-[98%] py-2 min-h-fit flex-nowrap custom-scrollbar">
                         {products.slice(0, 10).map((product, index) => (
                             <ProductCard
@@ -145,9 +163,9 @@ const MenPage = () => {
                             />
                         ))}
                     </ul>
-                    {showNext && (
+                    {showNext2 && (
                         <button
-                            onClick={scrollRight}
+                            onClick={scrollRight2}
                             className="absolute right-0 z-10 p-4 px-5 bg-white text-black border border-black">
                             <ArrowForwardIcon/>
                         </button>
