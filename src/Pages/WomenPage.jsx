@@ -187,7 +187,7 @@ const WomenPage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center p-10 section md:space-x-2">
+        <div className="flex  items-center p-10 section space-x-2">
           <div className="flex-1 flex flex-col items-center text-center">
             <img
                 src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/commercial_fw22_lego_ch2_winter_kids_lp_teaser_card_d_4038d78486.jpg"
