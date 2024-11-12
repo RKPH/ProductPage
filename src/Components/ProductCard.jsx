@@ -11,7 +11,7 @@ const ProductCard = ({ image, price, name, category }) => {
                 <img
                     src={image}
                     alt={name}
-                    className="object-cover bg-gray-100 h-full w-full"
+                    className="object-contain bg-gray-100 h-full w-full"
                 />
             </div>
 
