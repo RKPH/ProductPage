@@ -118,7 +118,44 @@ const MenPage = () => {
                     </button>
                 </div>
             </div>
-            {/* Hero Section */}
+            {/* Product Section  01 */}
+            <div className="p-4 relative">
+                <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
+                {/* Slider Wrapper */}
+                <div className="flex w-full items-center justify-center mt-2 relative">
+                    {showPrev && (
+                        <button
+                            onClick={scrollLeft}
+                            className="absolute left-0 z-10 p-4 px-5 bg-white text-black border border-black">
+                            <ArrowBackIcon/>
+                        </button>
+                    )}
+                    <ul
+                        ref={listRef}
+                        onScroll={handleScroll}
+                        className="flex gap-x-4 overflow-x-auto w-[98%] py-2 min-h-fit flex-nowrap custom-scrollbar">
+                        {products.slice(0, 10).map((product, index) => (
+                            <ProductCard
+                                key={index}
+                             
+                                price={product.price}
+                                name={product.name}
+                                category={product.category}
+                                fallbackImage={product.fallbackImage}
+                            />
+                        ))}
+                    </ul>
+                    {showNext && (
+                        <button
+                            onClick={scrollRight}
+                            className="absolute right-0 z-10 p-4 px-5 bg-white text-black border border-black">
+                            <ArrowForwardIcon/>
+                        </button>
+                    )}
+                </div>
+            </div>
+
+            {/* Hero Section 02 */}
             <div className="w-full h-auto relative mb-16">
                 {/*Banner*/}
                 <div className="_fill-image_154ez_1" data-auto-id="picture">
@@ -149,7 +186,7 @@ const MenPage = () => {
                 </div>
             </div>
 
-            {/* Product Section */}
+            {/* Product Section 02*/}
             <div className="p-4 relative">
                 <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
                 {/* Slider Wrapper */}
