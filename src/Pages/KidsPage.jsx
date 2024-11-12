@@ -1,6 +1,9 @@
 import  { useState } from "react";
-import React from "react";
-import { useEffect, useRef } from "react";
+
+import {  useRef } from "react";
+import ProductCard from "../Components/ProductCard.jsx";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const KidsPage = () => {
   const [showPrev, setShowPrev] = useState(false);
   const [showNext, setShowNext] = useState(true);
@@ -232,7 +235,7 @@ const KidsPage = () => {
                 className="flex gap-x-4 overflow-x-auto w-[98%] py-2 min-h-fit flex-nowrap custom-scrollbar"
             >
               {products
-                  .filter((product) => product.category === selectedCategory)
+
                   .slice(0, 10)
                   .map((product, index) => (
                       <ProductCard key={index} {...product} />
