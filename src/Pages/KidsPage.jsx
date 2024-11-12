@@ -1,6 +1,6 @@
 import  { useState } from "react";
 import React from "react";
-import React, { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 const KidsPage = () => {
   const [showPrev, setShowPrev] = useState(false);
   const [showNext, setShowNext] = useState(true);
