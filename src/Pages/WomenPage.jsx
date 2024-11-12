@@ -93,11 +93,19 @@ const WomenPage = () => {
       <div className="Women-page">
         {/* Hero  */}
         <div className="w-full h-auto relative mb-16 ">
-          <img
-              src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_d_8288c6b215.jpg"
-              alt="Women Banner"
-              className="w-full h-[500px] object-cover"
-          />
+          <picture>
+            <source
+                srcSet="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_d_8288c6b215.jpg"
+                media="(min-width: 960px)" width="2880" height="1620"/>
+            <source
+                srcSet="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_960,w_960/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_t_6ec16e14b7.jpg"
+                media="(min-width: 768px)" width="1600" height="1600"/>
+            <source
+                srcSet="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_768,w_768/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_m_b22bedf9b4.jpg"
+                media="(max-width: 767px)" width="750" height="1000"/>
+            <img
+                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/eu_city_escape_sportswear_fw24_launch_wglp_banner_asset_d_8288c6b215.jpg"
+                alt="Launch 2024 Fall Winter image" loading="lazy" fetchPriority="auto"/></picture>
           <div
               className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center space-y-4">
             <h1 className="text-white text-4xl md:text-6xl font-bold">
