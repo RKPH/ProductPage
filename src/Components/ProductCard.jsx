@@ -1,24 +1,27 @@
 import PropTypes from "prop-types";
-import { Card } from "@mui/material";
+import {Card} from "@mui/material";
 
-const ProductCard = ({ srcSets, price, name, category, fallbackImage }) => {
+const ProductCard = ({srcSets, price, name, category, fallbackImage}) => {
     return (
         <Card className="flex-shrink-0 w-72 rounded-md border overflow-hidden hover:border-black mb-2 shadow-none">
             {/* Product Image */}
             <div className="relative aspect-square flex items-center justify-center bg-gray-100">
                 <picture>
-                    {srcSets.map((srcSet, index) => (
-                        <source
-                            key={index}
-                            srcSet={srcSet.src}
-                            media={srcSet.media}
-                            width={srcSet.width}
-                            height={srcSet.height}
-                        />
-                    ))}
-                    {/* Fallback image if no srcSet matches */}
+                    {srcSets && srcSets.length > 0 ? (
+                        srcSets.map((srcSet, index) => (
+                            <source
+                                key={index}
+                                srcSet={srcSet.src}
+                                media={srcSet.media}
+                                width={srcSet.width}
+                                height={srcSet.height}
+                            />
+                        ))
+                    ) : (
+                        <source srcSet={fallbackImage}/>
+                    )}
                     <img
-                        src={fallbackImage}
+                        src={srcSets && srcSets.length > 0 ? srcSets[0].src : fallbackImage}
                         alt={name}
                         loading="lazy"
                         fetchPriority="auto"
@@ -47,11 +50,16 @@ ProductCard.propTypes = {
             width: PropTypes.number.isRequired,
             height: PropTypes.number.isRequired,
         })
-    ).isRequired,
+    ),
     price: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
     fallbackImage: PropTypes.string.isRequired,
+};
+
+// Default props to handle empty srcSets
+ProductCard.defaultProps = {
+    srcSets: [],
 };
 
 export default ProductCard;
