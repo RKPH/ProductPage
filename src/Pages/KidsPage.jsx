@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
+
+import ProductCard from "./Components/ProductCard";
 const KidsPage = () => {
   // Product pool
   const products = [
@@ -8,65 +13,59 @@ const KidsPage = () => {
       image:
         "https://assets.adidas.com/images/w_600,f_auto,q_auto/952d4b8966944834a3a14cb29de5d7cb_9366/Messi_Training_Jersey_Kids_Purple_IZ2999_21_model.jpg",
       price: "700,000₫",
+      category: "Kids",
     },
     {
       name: "Brand Love Backpack",
       image: "https://example.com/top-seller2.jpg",
       price: "650,000₫",
+      category: "Kids",
     },
     {
       name: "Marvel Avengers Backpack",
       image: "https://example.com/top-seller3.jpg",
       price: "800,000₫",
+      category: "Kids",
     },
     {
       name: "Tiro Tee Kids",
       image: "https://example.com/top-seller4.jpg",
       price: "700,000₫",
+      category: "Kids",
     },
     {
       name: "New Sports Shoe",
       image: "https://example.com/top-seller5.jpg",
       price: "1,000,000₫",
+      category: "Kids",
     },
     {
       name: "Running Shoes",
       image: "https://example.com/top-seller6.jpg",
       price: "1,200,000₫",
+      category: "Kids",
     },
     {
       name: "Running Shoes",
       image: "https://example.com/top-seller6.jpg",
       price: "1,200,000₫",
+      category: "Kids",
     },
     {
       name: "Running Shoes",
       image: "https://example.com/top-seller6.jpg",
       price: "1,200,000₫",
+      category: "Kids",
     },
     {
       name: "Running Shoes",
       image: "https://example.com/top-seller6.jpg",
       price: "1,200,000₫",
+      category: "Kids",
     },
   ];
 
   // State to track the current index of the products being displayed
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Handle the next button
-  const handleNext = () => {
-    if (currentIndex + 4 < products.length) {
-      setCurrentIndex(currentIndex + 4);
-    }
-  };
-
-  // Handle the previous button
-  const handlePrev = () => {
-    if (currentIndex - 4 >= 0) {
-      setCurrentIndex(currentIndex - 4);
-    }
-  };
 
   return (
     <div className="kids-page">
@@ -156,71 +155,39 @@ const KidsPage = () => {
         <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
 
         {/* Slider Wrapper */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex transition-transform duration-500 ease-in-out">
-            {products.map((product, index) => (
-              <div key={index} className="min-w-[25%] text-center p-4">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-[200px] object-cover rounded-lg"
-                />
-                <p className="text-lg mt-2">{product.name}</p>
-                <span className="text-gray-600">{product.price}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        <div className="flex w-full items-center justify-center mt-2 relative">
+          {showPrev && (
+            <button
+              onClick={scrollLeft}
+              className="absolute left-0 z-10 p-4 px-5 bg-white text-black border border-black"
+            >
+              <ArrowBackIcon />
+            </button>
+          )}
 
-        {/* Navigation Arrows */}
-        <div className="flex justify-between items-center mt-8 relative">
-          <button
-            onClick={handlePrev}
-            disabled={currentIndex === 0}
-            className={`absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-3 rounded-full hover:bg-gray-700 transition-all duration-300 ${
-              currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
-            }`}
+          <ul
+            ref={listRef}
+            onScroll={handleScroll}
+            className="flex gap-x-4 overflow-x-auto w-[98%] py-2 min-h-fit flex-nowrap custom-scrollbar"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
+            {products
+              .filter((product) => product.category === selectedCategory)
+              .slice(0, 10)
+              .map((product, index) => (
+                <ProductCard key={index} {...product} />
+              ))}
+          </ul>
+
+          {showNext && (
+            <button
+              onClick={scrollRight}
+              className="absolute right-0 z-10 p-4 px-5 bg-white text-black border border-black"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
-              />
-            </svg>
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={currentIndex + 4 >= products.length}
-            className={`absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-3 rounded-full hover:bg-gray-700 transition-all duration-300 ${
-              currentIndex + 4 >= products.length
-                ? "opacity-50 cursor-not-allowed"
-                : ""
-            }`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </button>
+              <ArrowForwardIcon />
+            </button>
+          )}
         </div>
+       
       </div>
     </div>
   );
