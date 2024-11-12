@@ -215,7 +215,7 @@ const KidsPage = () => {
         </div>
 
         {/* Top Sellers  */}
-        <div className="p-16 relative ">
+        <div className="p-4 relative ">
           <h2 className="text-center text-3xl font-bold mb-6">Top Sellers</h2>
 
           {/* Slider Wrapper */}
