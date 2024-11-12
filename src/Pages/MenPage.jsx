@@ -139,7 +139,7 @@ const MenPage = () => {
         </div>
 
         {/* Overlay content positioned at the top-left corner */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-start p-8 space-y-4">
+        <div className="absolute  bottom-0 left-0 inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-start p-8 space-y-4">
           <h1 className="text-white text-2xl md:text-4xl font-bold">
             CITY ESCAPE
           </h1>
