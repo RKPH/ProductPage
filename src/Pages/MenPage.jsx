@@ -29,30 +29,47 @@ const MenPage = () => {
             height: 1400,
         }
     ];
-
     const products = [
         {
-            name: "Gazelle Men Shoes",
-            price: "1,500,000₫",
+            name: "Messi Training Jersey",
+            price: "700,000₫",
+            category: "Sportswear",
+            srcSets: srcSets,
+            fallbackImage:
+                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+        },
+        {
+            name: "Brand Love Backpack",
+            price: "650,000₫",
+            category: "Accessories",
+            srcSets: srcSets,
+            fallbackImage:
+                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+        },
+        {
+            name: "Marvel Avengers Backpack",
+            price: "800,000₫",
+            category: "Backpack",
+            srcSets: srcSets,
+            fallbackImage:
+                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+        },
+        {
+            name: "Tiro Tee Women",
+            price: "700,000₫",
+            category: "Women’s T-Shirts",
+            srcSets: srcSets,
+            fallbackImage:
+                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+        },
+        {
+            name: "New Sports Shoe",
+            price: "1,000,000₫",
             category: "Shoes",
             srcSets: srcSets,
-            fallbackImage: "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
-        },
-        {
-            name: "Men's Sports T-shirt",
-            price: "350,000₫",
-            category: "T-Shirts",
-            srcSets: srcSets,
-            fallbackImage: "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
-        },
-        {
-            name: "Men's Training Shorts",
-            price: "450,000₫",
-            category: "Shorts",
-            srcSets: srcSets,
-            fallbackImage: "https://assets.adidas.com/images/w_600,f_auto,q_auto/35f43811659f42d8bbfe9ed485c526cb_9366/Giay_Gazelle_Ngoc_lam_IG1061_01_standard.jpg",
-        },
-        // Add more products here
+            fallbackImage:
+                "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_400,w_400/image_large.jpg",
+        }
     ];
 
     const handleScroll = () => {

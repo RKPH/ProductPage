@@ -74,7 +74,6 @@ const WomenPage = () => {
   ];
 
 
-
   // State to track the current index of the products being displayed
   const handleScroll = () => {
     const list = listRef.current;
